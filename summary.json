@@ -1,0 +1,860 @@
+{
+ "schema_version": "1.0",
+ "dataset": {
+  "name": "ham10000",
+  "title": "HAM10000",
+  "source_url": "https://api.isic-archive.com/collections/212/",
+  "group_level": "lesion",
+  "acquisition_name": "resolution group",
+  "fields": {
+   "numeric": [
+    "age_approx"
+   ],
+   "categorical": [
+    "sex",
+    "anatom_site_1"
+   ],
+   "core": [
+    "age_approx",
+    "sex",
+    "anatom_site_1"
+   ]
+  }
+ },
+ "license": {
+  "name": "CC-BY-NC",
+  "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "allows_redistribution": true,
+  "non_commercial": true,
+  "citations": [
+   "Tschandl P, Rosendahl C, Kittler H. The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions. Sci Data. 2018;5:180161. doi:10.1038/sdata.2018.161"
+  ],
+  "notes": "No patient id (lesion ids only). The 10,015 training images are also part of ISIC 2019 (lesion ids HAM_...), so the two audits are not independent samples."
+ },
+ "inputs": {
+  "collection_id": 212,
+  "doi": "10.1038/sdata.2018.161",
+  "metadata_csv": "/kaggle/temp/isic_212_raw/metadata.csv",
+  "metadata_md5": "dd6da35de62aa5597780df37a003001a",
+  "n_rows": 11720,
+  "fields_found": [
+   "age_approx",
+   "sex",
+   "anatom_site_1"
+  ],
+  "group_level": "lesion",
+  "acquisition_mode": "resolution",
+  "patient_id_share": 0.0,
+  "duplicate_image_names": 0,
+  "missing_tokens_converted": {
+   "sex": 0,
+   "anatom_site_1": 0
+  },
+  "image_vs_metadata_size_mismatch": 0,
+  "label_counts": {
+   "NV": 7737,
+   "BKL": 1338,
+   "MEL": 1305,
+   "BCC": 622,
+   "SCC": 229,
+   "VASC": 180,
+   "DF": 160,
+   "AK": 149
+  },
+  "license_values": {
+   "CC-BY-NC": 11720
+  },
+  "attribution_values": {
+   "MILK study team": 11720
+  }
+ },
+ "versions": {
+  "skinaudit": "0.1.0",
+  "python": "3.13.15",
+  "pandas": "2.3.3",
+  "numpy": "2.1.3",
+  "scipy": "1.16.3",
+  "sklearn": "1.6.1"
+ },
+ "structure": {
+  "n_images": 11720,
+  "n_groups": 8836,
+  "group_level": "lesion",
+  "groups_with_multiple_images": 2223,
+  "max_images_per_group": 6,
+  "max_share_one_group": 0.0005,
+  "groups_with_several_labels": 0,
+  "n_lesions": 8838,
+  "lesions_with_conflicting_labels": 0,
+  "within_group": {
+   "age_approx": {
+    "groups_with_several_images": 2223,
+    "groups_with_conflicting_values": 0,
+    "groups_all_missing": 22,
+    "groups_partly_missing": 1,
+    "missingness_is_group_level": false
+   },
+   "sex": {
+    "groups_with_several_images": 2223,
+    "groups_with_conflicting_values": 0,
+    "groups_all_missing": 2,
+    "groups_partly_missing": 0,
+    "missingness_is_group_level": true
+   },
+   "anatom_site_1": {
+    "groups_with_several_images": 2223,
+    "groups_with_conflicting_values": 0,
+    "groups_all_missing": 34,
+    "groups_partly_missing": 0,
+    "missingness_is_group_level": true
+   }
+  }
+ },
+ "class_counts": {
+  "MEL": 1305,
+  "NV": 7737,
+  "BCC": 622,
+  "AK": 149,
+  "BKL": 1338,
+  "DF": 160,
+  "VASC": 180,
+  "SCC": 229
+ },
+ "harmonized_classes": {
+  "taxonomy": "isic_archive",
+  "level1": {
+   "images": {
+    "malignant": 2156,
+    "benign": 9415,
+    "indeterminate": 149
+   },
+   "groups": {
+    "malignant": 1306,
+    "benign": 7431,
+    "indeterminate": 99
+   }
+  },
+  "level2": {
+   "images": {
+    "MEL": 1305,
+    "NV": 7737,
+    "BCC": 622,
+    "SCC": 229,
+    "AK": 149,
+    "BKL": 1338,
+    "DF": 160,
+    "VASC": 180,
+    "OTHER": 0,
+    "UNSPECIFIED": 0
+   },
+   "groups": {
+    "MEL": 734,
+    "NV": 6277,
+    "BCC": 407,
+    "SCC": 165,
+    "AK": 99,
+    "BKL": 910,
+    "DF": 114,
+    "VASC": 130,
+    "OTHER": 0,
+    "UNSPECIFIED": 0
+   }
+  },
+  "shared_classes_present": [
+   "MEL",
+   "NV",
+   "BCC",
+   "SCC",
+   "AK",
+   "BKL",
+   "DF",
+   "VASC"
+  ],
+  "ambiguous_share": 0.0,
+  "unspecified_share": 0.0
+ },
+ "acquisition_counts": {
+  "600x450": 11720
+ },
+ "acquisition_vs_label_v_corrected": NaN,
+ "missing_rate": {
+  "miss_age_approx": 0.0327,
+  "miss_sex": 0.0293,
+  "miss_anatom_site_1": 0.0496
+ },
+ "missing_vs_label_v_corrected": {
+  "miss_age_approx": 0.1343,
+  "miss_sex": 0.1424,
+  "miss_anatom_site_1": 0.1042,
+  "complete": 0.1026,
+  "complete_core": 0.1026
+ },
+ "missing_vs_acquisition_v_corrected": {
+  "miss_age_approx": NaN,
+  "miss_sex": NaN,
+  "miss_anatom_site_1": NaN,
+  "complete": NaN,
+  "complete_core": NaN
+ },
+ "missing_vs_other_fields_max_v_corrected": {
+  "age_approx": 0.0262,
+  "sex": 0.0082,
+  "anatom_site_1": 0.0787
+ },
+ "missing_vs_other_fields_within_label_max_v_corrected": {
+  "age_approx": 0.0529,
+  "sex": 0.0186,
+  "anatom_site_1": 0.086
+ },
+ "value_association": {
+  "age_approx": 0.2329,
+  "sex": 0.095,
+  "anatom_site_1": 0.23
+ },
+ "excluded_columns_v_corrected": {
+  "diagnosis_1": 0.9998,
+  "diagnosis_2": 1.0,
+  "diagnosis_3": 1.0,
+  "diagnosis_confirm_type": 0.3941,
+  "concomitant_biopsy": 0.5014,
+  "melanocytic": 0.9997,
+  "anatom_site_2": 0.1734,
+  "anatom_site_3": 0.2033,
+  "anatom_site_special": 0.0475,
+  "image_type": 0.0,
+  "image_manipulation": 0.0
+ },
+ "image_properties": {
+  "n_distinct_resolutions": 1,
+  "resolution_vs_label_v_corrected": NaN,
+  "resolution_vs_acquisition_v_corrected": NaN,
+  "megapixels_vs_label_epsilon2": NaN,
+  "image_stats_seconds": 40.3
+ },
+ "shortcut_cv": {
+  "A_missing_indicators": {
+   "n_rows": 11720,
+   "n_groups": 8836,
+   "n_classes": 8,
+   "bacc_mean": 0.148740432520646,
+   "bacc_sd": 0.007277557875360895,
+   "n_repeats": 5,
+   "bacc_repeat_sd": 0.0018810715598180192,
+   "bacc_se_corrected": 0.003919153226148174,
+   "bacc_ci_low": 0.14065169781439898,
+   "bacc_ci_high": 0.15682916722689302,
+   "bacc_split1": 0.14609123907115723,
+   "gain": 0.023855956673613204,
+   "gain_ci_low": 0.01574418053364141,
+   "gain_ci_high": 0.031967732813585004,
+   "min_classes_in_test_fold": 8,
+   "every_fold_has_all_classes": true,
+   "test_null": "unit",
+   "n_perm": 200,
+   "perm_level": "unit",
+   "n_perm_unit": 200,
+   "n_perm_units": 8836,
+   "perm_movable_share": 1.0,
+   "null_mean": 0.1248844758470328,
+   "null_sd": 0.004186448505113841,
+   "null_q025": 0.1169022399056186,
+   "null_q975": 0.13190652099322933,
+   "p_perm": 0.004975124378109453,
+   "p_perm_holm": 0.02487562189054726,
+   "p_perm_unit": 0.004975124378109453,
+   "null_degenerate": false,
+   "resampled_null": false,
+   "n_perm_group": 50,
+   "null_group_mean": 0.12638207396482312,
+   "null_group_sd": 0.0030449988993846372,
+   "null_group_q025": 0.12107945824618238,
+   "null_group_q975": 0.13129926391203295,
+   "p_perm_group": 0.0196078431372549,
+   "group_movable_share": 1.0,
+   "null_group_degenerate": false,
+   "sensitivity_skipped": null,
+   "chance": 0.125,
+   "n_jobs": 4,
+   "seconds": 839.8
+  },
+  "C_image_size": {
+   "n_rows": 11720,
+   "n_groups": 8836,
+   "n_classes": 8,
+   "bacc_mean": 0.15529342075222685,
+   "bacc_sd": 0.019410834456705755,
+   "n_repeats": 5,
+   "bacc_repeat_sd": 0.00906629864078967,
+   "bacc_se_corrected": 0.010453236619496339,
+   "bacc_ci_low": 0.133719000728891,
+   "bacc_ci_high": 0.1768678407755627,
+   "bacc_split1": 0.14674582174616396,
+   "gain": 0.03061279049723871,
+   "gain_ci_low": 0.008986502785455347,
+   "gain_ci_high": 0.05223907820902207,
+   "min_classes_in_test_fold": 8,
+   "every_fold_has_all_classes": true,
+   "test_null": "unit",
+   "n_perm": 200,
+   "perm_level": "unit",
+   "n_perm_unit": 200,
+   "n_perm_units": 8836,
+   "perm_movable_share": 1.0,
+   "null_mean": 0.12468063025498814,
+   "null_sd": 0.010257004051457026,
+   "null_q025": 0.10478834291871723,
+   "null_q975": 0.145484708200795,
+   "p_perm": 0.029850746268656716,
+   "p_perm_holm": 0.029850746268656716,
+   "p_perm_unit": 0.029850746268656716,
+   "null_degenerate": false,
+   "resampled_null": false,
+   "n_perm_group": 50,
+   "null_group_mean": 0.12606254507549755,
+   "null_group_sd": 0.009563396087072547,
+   "null_group_q025": 0.10734486035781901,
+   "null_group_q975": 0.14216269828103417,
+   "p_perm_group": 0.0196078431372549,
+   "group_movable_share": 1.0,
+   "null_group_degenerate": false,
+   "sensitivity_skipped": null,
+   "chance": 0.125,
+   "n_jobs": 4,
+   "seconds": 2019.5
+  },
+  "E_values_with_missing": {
+   "n_rows": 11720,
+   "n_groups": 8836,
+   "n_classes": 8,
+   "bacc_mean": 0.31398946140876577,
+   "bacc_sd": 0.02205858014153521,
+   "n_repeats": 5,
+   "bacc_repeat_sd": 0.010651069601113365,
+   "bacc_se_corrected": 0.011879116182454082,
+   "bacc_ci_low": 0.28947217060638664,
+   "bacc_ci_high": 0.3385067522111449,
+   "bacc_split1": 0.30818459563806877,
+   "gain": 0.18818449873297735,
+   "gain_ci_low": 0.1635876833471387,
+   "gain_ci_high": 0.212781314118816,
+   "min_classes_in_test_fold": 8,
+   "every_fold_has_all_classes": true,
+   "test_null": "unit",
+   "n_perm": 200,
+   "perm_level": "unit",
+   "n_perm_unit": 200,
+   "n_perm_units": 8836,
+   "perm_movable_share": 1.0,
+   "null_mean": 0.12580496267578842,
+   "null_sd": 0.01354192715772896,
+   "null_q025": 0.10006451358217221,
+   "null_q975": 0.15528732973433018,
+   "p_perm": 0.004975124378109453,
+   "p_perm_holm": 0.02487562189054726,
+   "p_perm_unit": 0.004975124378109453,
+   "null_degenerate": false,
+   "resampled_null": false,
+   "n_perm_group": 50,
+   "null_group_mean": 0.12626710083378445,
+   "null_group_sd": 0.012265227222345057,
+   "null_group_q025": 0.10393117972558139,
+   "null_group_q975": 0.15311357547006038,
+   "p_perm_group": 0.0196078431372549,
+   "group_movable_share": 1.0,
+   "null_group_degenerate": false,
+   "sensitivity_skipped": null,
+   "chance": 0.125,
+   "n_jobs": 4,
+   "seconds": 2226.5
+  },
+  "G_core_values_complete_core": {
+   "n_rows": 11084,
+   "n_groups": 8262,
+   "n_classes": 8,
+   "bacc_mean": 0.3127884402133295,
+   "bacc_sd": 0.02084598885545986,
+   "n_repeats": 5,
+   "bacc_repeat_sd": 0.00893128309009606,
+   "bacc_se_corrected": 0.011225976579805038,
+   "bacc_ci_low": 0.28961916329740006,
+   "bacc_ci_high": 0.335957717129259,
+   "bacc_split1": 0.30036681613838623,
+   "gain": 0.18812045674287187,
+   "gain_ci_low": 0.16486496341683285,
+   "gain_ci_high": 0.21137595006891088,
+   "min_classes_in_test_fold": 8,
+   "every_fold_has_all_classes": true,
+   "test_null": "unit",
+   "n_perm": 200,
+   "perm_level": "unit",
+   "n_perm_unit": 200,
+   "n_perm_units": 8262,
+   "perm_movable_share": 1.0,
+   "null_mean": 0.12466798347045764,
+   "null_sd": 0.01370870714526187,
+   "null_q025": 0.09988792078342815,
+   "null_q975": 0.15072880396271662,
+   "p_perm": 0.004975124378109453,
+   "p_perm_holm": 0.02487562189054726,
+   "p_perm_unit": 0.004975124378109453,
+   "null_degenerate": false,
+   "resampled_null": false,
+   "n_perm_group": 50,
+   "null_group_mean": 0.12438512409260481,
+   "null_group_sd": 0.014721150292050508,
+   "null_group_q025": 0.09416243295392734,
+   "null_group_q975": 0.15034446361129766,
+   "p_perm_group": 0.0196078431372549,
+   "group_movable_share": 1.0,
+   "null_group_degenerate": false,
+   "sensitivity_skipped": null,
+   "chance": 0.125,
+   "n_jobs": 4,
+   "seconds": 2097.4
+  },
+  "I_image_border_stats": {
+   "n_rows": 11720,
+   "n_groups": 8836,
+   "n_classes": 8,
+   "bacc_mean": 0.25656714983856316,
+   "bacc_sd": 0.019953019373434907,
+   "n_repeats": 5,
+   "bacc_repeat_sd": 0.004381248842965652,
+   "bacc_se_corrected": 0.010745217226447206,
+   "bacc_ci_low": 0.23439011146051814,
+   "bacc_ci_high": 0.2787441882166082,
+   "bacc_split1": 0.25108083379879986,
+   "gain": 0.13171407980882321,
+   "gain_ci_low": 0.10952904669046536,
+   "gain_ci_high": 0.15389911292718106,
+   "min_classes_in_test_fold": 8,
+   "every_fold_has_all_classes": true,
+   "test_null": "unit",
+   "n_perm": 200,
+   "perm_level": "unit",
+   "n_perm_unit": 200,
+   "n_perm_units": 8836,
+   "perm_movable_share": 1.0,
+   "null_mean": 0.12485307002973993,
+   "null_sd": 0.004080700666036816,
+   "null_q025": 0.1180721808059164,
+   "null_q975": 0.13342093709894295,
+   "p_perm": 0.004975124378109453,
+   "p_perm_holm": 0.02487562189054726,
+   "p_perm_unit": 0.004975124378109453,
+   "null_degenerate": false,
+   "resampled_null": false,
+   "n_perm_group": 50,
+   "null_group_mean": 0.14135647402353013,
+   "null_group_sd": 0.003917461597207384,
+   "null_group_q025": 0.13447206606185638,
+   "null_group_q975": 0.14759889088992187,
+   "p_perm_group": 0.0196078431372549,
+   "group_movable_share": 1.0,
+   "null_group_degenerate": false,
+   "sensitivity_skipped": null,
+   "chance": 0.125,
+   "n_jobs": 4,
+   "seconds": 2173.4
+  }
+ },
+ "complete_case": {
+  "complete_n": 11084,
+  "complete_share": 0.9457,
+  "complete_core_n": 11084,
+  "complete_core_share": 0.9457,
+  "complete_min_groups_per_class": 83,
+  "complete_core_min_groups_per_class": 83
+ },
+ "rubric": {
+  "n_images": 11720,
+  "has_patient_id": false,
+  "n_metadata_fields": 3,
+  "min_class_images": 149,
+  "min_class_groups_complete_core": 83,
+  "max_missing_rate": 0.0496,
+  "fields_missing_at_group_level": [
+   "sex",
+   "anatom_site_1"
+  ],
+  "max_missing_vs_other_fields_v": 0.0787,
+  "max_missing_vs_other_fields_within_label_v": 0.086,
+  "redundant_shortcut_sets": [],
+  "permutation_sensitivity": {
+   "A_missing_indicators": {
+    "gain_main_null": 0.0239,
+    "gain_group_null": 0.0224,
+    "gap": 0.0015,
+    "gap_se": 0.0005,
+    "test_null": "unit"
+   },
+   "C_image_size": {
+    "gain_main_null": 0.0306,
+    "gain_group_null": 0.0292,
+    "gap": 0.0014,
+    "gap_se": 0.0015,
+    "test_null": "unit"
+   },
+   "E_values_with_missing": {
+    "gain_main_null": 0.1882,
+    "gain_group_null": 0.1877,
+    "gap": 0.0005,
+    "gap_se": 0.002,
+    "test_null": "unit"
+   },
+   "G_core_values_complete_core": {
+    "gain_main_null": 0.1881,
+    "gain_group_null": 0.1884,
+    "gap": -0.0003,
+    "gap_se": 0.0023,
+    "test_null": "unit"
+   },
+   "I_image_border_stats": {
+    "gain_main_null": 0.1317,
+    "gain_group_null": 0.1152,
+    "gap": 0.0165,
+    "gap_se": 0.0006,
+    "test_null": "unit"
+   }
+  },
+  "informative_missingness_bacc_gain": 0.0239,
+  "informative_missingness_p": 0.004975124378109453,
+  "informative_missingness_p_holm": 0.02487562189054726,
+  "acquisition_shortcut_bacc_gain": null,
+  "image_size_shortcut_bacc_gain": 0.0306,
+  "image_border_shortcut_bacc_gain": 0.1317,
+  "metadata_signal_bacc_gain": 0.1881,
+  "bacc_gain_ci": {
+   "A_missing_indicators": [
+    0.0157,
+    0.032
+   ],
+   "C_image_size": [
+    0.009,
+    0.0522
+   ],
+   "E_values_with_missing": [
+    0.1636,
+    0.2128
+   ],
+   "G_core_values_complete_core": [
+    0.1649,
+    0.2114
+   ],
+   "I_image_border_stats": [
+    0.1095,
+    0.1539
+   ]
+  },
+  "complete_case_max_abs_smd": {
+   "max_abs_smd": 0.0249,
+   "variable": "label"
+  },
+  "complete_core_max_abs_smd": {
+   "max_abs_smd": 0.0249,
+   "variable": "label"
+  },
+  "label_dependent_missingness": {
+   "fields": "age_approx",
+   "variant": "values_only",
+   "auc_gain": 0.0128,
+   "crt_p": 0.0159,
+   "crt_p_holm": 0.0794,
+   "group_swap_p": 0.0079,
+   "group_swap_p_holm": 0.0397,
+   "supported": false,
+   "label_r2": 0.1113
+  },
+  "license": "CC-BY-NC",
+  "samples_can_be_shown": true
+ },
+ "missingness_mechanism": [
+  {
+   "fields": "age_approx",
+   "variant": "with_indicators",
+   "n_rows": 11720,
+   "n_missing": 383,
+   "n_groups_missing": 360,
+   "auc_a": 0.9663993287995523,
+   "auc_b": 0.9652907564155446,
+   "auc_gain": -0.0011085723840076334,
+   "fold_gain_mean": -0.002241119048442819,
+   "fold_gain_sd": 0.008319852971379665,
+   "crt_p": 0.03968253968253968,
+   "crt_null_mean": 0.9542793611619892,
+   "crt_null_q975": 0.9655357777429249,
+   "phat_logloss": 1.0445410710854992,
+   "const_logloss": 1.1772894557134495,
+   "label_r2": 0.11275764340172689,
+   "phat_rounds": "74,42,26,53,29",
+   "group_swap_p": 0.05555555555555555,
+   "group_swap_null_mean": 0.955093385621746,
+   "group_swap_movable_share": 1.0,
+   "group_swap_degenerate": false,
+   "group_swap_strata": "images per group x acquisition",
+   "crt_p_holm": 0.15873015873015872,
+   "group_swap_p_holm": 0.2222222222222222,
+   "label_dependence_supported": false,
+   "n_perm": 125.0,
+   "inputs": "sex, anatom_site_1, miss_sex, miss_anatom_site_1, acquisition, group_size",
+   "skipped": null
+  },
+  {
+   "fields": "age_approx",
+   "variant": "values_only",
+   "n_rows": 11136,
+   "n_missing": 52,
+   "n_groups_missing": 30,
+   "auc_a": 0.7934141034894373,
+   "auc_b": 0.8062340379757377,
+   "auc_gain": 0.012819934486300366,
+   "fold_gain_mean": -0.006756439259801006,
+   "fold_gain_sd": 0.06098666366665155,
+   "crt_p": 0.015873015873015872,
+   "crt_null_mean": 0.6953607001082641,
+   "crt_null_q975": 0.7558856494461871,
+   "phat_logloss": 1.036856272010681,
+   "const_logloss": 1.166668353846505,
+   "label_r2": 0.11126733780669851,
+   "phat_rounds": "36,37,55,25,34",
+   "group_swap_p": 0.007936507936507936,
+   "group_swap_null_mean": 0.6911992477028566,
+   "group_swap_movable_share": 1.0,
+   "group_swap_degenerate": false,
+   "group_swap_strata": "images per group x acquisition",
+   "crt_p_holm": 0.07936507936507936,
+   "group_swap_p_holm": 0.03968253968253968,
+   "label_dependence_supported": false,
+   "n_perm": 125.0,
+   "inputs": "sex, anatom_site_1, acquisition, group_size",
+   "skipped": null
+  },
+  {
+   "fields": "sex",
+   "variant": "with_indicators",
+   "n_rows": 11720,
+   "n_missing": 343,
+   "n_groups_missing": 340,
+   "auc_a": 0.9963470364099632,
+   "auc_b": 0.9949260835438283,
+   "auc_gain": -0.0014209528661349724,
+   "fold_gain_mean": -0.0018356775998416897,
+   "fold_gain_sd": 0.005843117393436509,
+   "crt_p": 0.9206349206349206,
+   "crt_null_mean": 0.9966855117390695,
+   "crt_null_q975": 0.9981241372099764,
+   "phat_logloss": 0.9401869886342579,
+   "const_logloss": 1.1772894557134495,
+   "label_r2": 0.20139691723944397,
+   "phat_rounds": "59,46,36,51,46",
+   "group_swap_p": 0.9126984126984127,
+   "group_swap_null_mean": 0.9966209192450318,
+   "group_swap_movable_share": 0.9995733788395904,
+   "group_swap_degenerate": false,
+   "group_swap_strata": "images per group x acquisition x age band",
+   "crt_p_holm": 0.9206349206349206,
+   "group_swap_p_holm": 0.9126984126984127,
+   "label_dependence_supported": false,
+   "n_perm": 125.0,
+   "inputs": "age_approx, anatom_site_1, miss_age_approx, miss_anatom_site_1, acquisition, group_size",
+   "skipped": null
+  },
+  {
+   "fields": "sex",
+   "variant": "values_only",
+   "n_rows": 11087,
+   "n_missing": 3,
+   "n_groups_missing": 1,
+   "auc_a": null,
+   "auc_b": null,
+   "auc_gain": null,
+   "fold_gain_mean": null,
+   "fold_gain_sd": null,
+   "crt_p": null,
+   "crt_null_mean": null,
+   "crt_null_q975": null,
+   "phat_logloss": null,
+   "const_logloss": null,
+   "label_r2": null,
+   "phat_rounds": null,
+   "group_swap_p": null,
+   "group_swap_null_mean": null,
+   "group_swap_movable_share": null,
+   "group_swap_degenerate": null,
+   "group_swap_strata": null,
+   "crt_p_holm": null,
+   "group_swap_p_holm": null,
+   "label_dependence_supported": null,
+   "n_perm": null,
+   "inputs": "age_approx, anatom_site_1, acquisition, group_size",
+   "skipped": "too few missing (or no observed) rows after selecting inputs"
+  },
+  {
+   "fields": "anatom_site_1",
+   "variant": "with_indicators",
+   "n_rows": 11720,
+   "n_missing": 581,
+   "n_groups_missing": 544,
+   "auc_a": 0.8881056912038907,
+   "auc_b": 0.8864936101606998,
+   "auc_gain": -0.0016120810431908827,
+   "fold_gain_mean": -0.0026657263490935446,
+   "fold_gain_sd": 0.009730648792654261,
+   "crt_p": 0.10317460317460317,
+   "crt_null_mean": 0.8774900474507782,
+   "crt_null_q975": 0.8891859462010251,
+   "phat_logloss": 0.9968306291686151,
+   "const_logloss": 1.1772894557134495,
+   "label_r2": 0.15328331165208176,
+   "phat_rounds": "36,41,38,37,37",
+   "group_swap_p": 0.05555555555555555,
+   "group_swap_null_mean": 0.8784921348276411,
+   "group_swap_movable_share": 0.9995733788395904,
+   "group_swap_degenerate": false,
+   "group_swap_strata": "images per group x acquisition x age band",
+   "crt_p_holm": 0.30952380952380953,
+   "group_swap_p_holm": 0.2222222222222222,
+   "label_dependence_supported": false,
+   "n_perm": 125.0,
+   "inputs": "age_approx, sex, miss_age_approx, miss_sex, acquisition, group_size",
+   "skipped": null
+  },
+  {
+   "fields": "anatom_site_1",
+   "variant": "values_only",
+   "n_rows": 11324,
+   "n_missing": 240,
+   "n_groups_missing": 204,
+   "auc_a": 0.7170897615181042,
+   "auc_b": 0.7144141705762059,
+   "auc_gain": -0.002675590941898287,
+   "fold_gain_mean": -0.0022799772002644048,
+   "fold_gain_sd": 0.017252648740383732,
+   "crt_p": 0.1349206349206349,
+   "crt_null_mean": 0.6949790253217851,
+   "crt_null_q975": 0.7238610647479851,
+   "phat_logloss": 0.9834860158299139,
+   "const_logloss": 1.1619839405212578,
+   "label_r2": 0.15361479489232088,
+   "phat_rounds": "51,40,31,44,38",
+   "group_swap_p": 0.10317460317460317,
+   "group_swap_null_mean": 0.6933083754360642,
+   "group_swap_movable_share": 0.9995584599081596,
+   "group_swap_degenerate": false,
+   "group_swap_strata": "images per group x acquisition x age band",
+   "crt_p_holm": 0.30952380952380953,
+   "group_swap_p_holm": 0.2222222222222222,
+   "label_dependence_supported": false,
+   "n_perm": 125.0,
+   "inputs": "age_approx, sex, acquisition, group_size",
+   "skipped": null
+  }
+ ],
+ "missingness_mechanism_tests": {
+  "rows_tested": 5,
+  "n_perm": 125,
+  "smallest_attainable_holm_p": 0.0397
+ },
+ "model_labels": {
+  "min_class_groups": 10,
+  "merged_into_other": {},
+  "unspecified_images_left_out": 0,
+  "conflicting_duplicate_images_left_out": 0,
+  "classes": [
+   "MEL",
+   "NV",
+   "BCC",
+   "AK",
+   "BKL",
+   "DF",
+   "VASC",
+   "SCC"
+  ]
+ },
+ "permutation": {
+  "requested": "unit",
+  "units": "lesion",
+  "n_perm": 200,
+  "n_perm_reference": 50,
+  "used_per_set": {
+   "A_missing_indicators": "unit",
+   "C_image_size": "unit",
+   "E_values_with_missing": "unit",
+   "G_core_values_complete_core": "unit",
+   "I_image_border_stats": "unit"
+  },
+  "test_null_per_set": {
+   "A_missing_indicators": "unit",
+   "C_image_size": "unit",
+   "E_values_with_missing": "unit",
+   "G_core_values_complete_core": "unit",
+   "I_image_border_stats": "unit"
+  },
+  "holm_family": [
+   "A_missing_indicators",
+   "C_image_size",
+   "E_values_with_missing",
+   "G_core_values_complete_core",
+   "I_image_border_stats"
+  ],
+  "sensitivity_skipped": {}
+ },
+ "runtime": {
+  "n_jobs": 4,
+  "cpus_detected": 4
+ },
+ "duplicates": {
+  "action": "merge",
+  "confirmed_pairs": 2,
+  "pairs_not_in_this_data": 0,
+  "pairs_with_conflicting_labels": 0,
+  "conflicting_label_images_left_out_of_model_tests": [],
+  "groups_before": 8838,
+  "groups_after": 8836,
+  "merged_groups": [
+   [
+    "lesion:IL_1299355",
+    "lesion:IL_8593443"
+   ],
+   [
+    "lesion:IL_3904791",
+    "lesion:IL_9806988"
+   ]
+  ],
+  "pairs": [
+   {
+    "image_id_1": "ISIC_0025226",
+    "image_id_2": "ISIC_0030074",
+    "reason": "same photo under two lesion ids (pHash distance 2); same diagnosis, age, sex and site; checked by eye"
+   },
+   {
+    "image_id_1": "ISIC_0027027",
+    "image_id_2": "ISIC_0029036",
+    "reason": "same photo under two lesion ids (pHash distance 4); same diagnosis, age, sex and site; checked by eye"
+   }
+  ]
+ },
+ "cv_subsample": null,
+ "elapsed_seconds": 10947.2,
+ "figures": [
+  "class_counts.png",
+  "missing_by_class.png",
+  "missing_patterns.png",
+  "association.png",
+  "age_approx_by_class.png",
+  "missing_vs_other_fields.png",
+  "missing_vs_other_fields_within_label.png",
+  "acquisition_by_class.png",
+  "resolution_by_class.png",
+  "image_stats.png",
+  "shortcut_cv.png",
+  "complete_case_bias.png",
+  "group_size.png",
+  "feature_importance.png",
+  "missingness_confusion.png",
+  "categorical_by_class.png",
+  "null_distributions.png",
+  "missingness_mechanism.png",
+  "complete_case_smd.png"
+ ]
+}

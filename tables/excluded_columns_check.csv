@@ -1,0 +1,12 @@
+,column,reason_excluded,v_corrected,p_naive
+0,diagnosis_1,label,0.9997866120369194,0.0
+1,diagnosis_2,label,1.0,0.0
+2,diagnosis_3,label,1.0,0.0
+3,diagnosis_confirm_type,label leak (how the diagnosis was confirmed),0.3941092059029144,0.0
+4,concomitant_biopsy,label leak (biopsy decision),0.5014004424217864,0.0
+5,melanocytic,label leak (derived from the diagnosis),0.9997439508343637,0.0
+6,anatom_site_2,"sub-site, recorded only for some sites",0.17339635920350915,0.0
+7,anatom_site_3,sub-site,0.20331499321803537,0.0
+8,anatom_site_special,"sub-site flag, recorded only when it applies",0.04747646220463414,2.6250911871850812e-12
+9,image_type,acquisition,0.0,0.9993902970520597
+10,image_manipulation,acquisition,0.0,0.9993902970520597

@@ -1,0 +1,4 @@
+field,groups_with_several_images,groups_with_conflicting_values,groups_all_missing,groups_partly_missing,missingness_is_group_level
+age_approx,2223,0,22,1,False
+sex,2223,0,2,0,True
+anatom_site_1,2223,0,34,0,True

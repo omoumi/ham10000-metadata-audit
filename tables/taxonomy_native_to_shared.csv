@@ -1,0 +1,11 @@
+l1,benign,benign,benign,benign,indeterminate,malignant,malignant,malignant
+l2,BKL,DF,NV,VASC,AK,BCC,MEL,SCC
+label,,,,,,,,
+AK,0,0,0,0,149,0,0,0
+BCC,0,0,0,0,0,622,0,0
+BKL,1338,0,0,0,0,0,0,0
+DF,0,160,0,0,0,0,0,0
+MEL,0,0,0,0,0,0,1305,0
+NV,0,0,7737,0,0,0,0,0
+SCC,0,0,0,0,0,0,0,229
+VASC,0,0,0,180,0,0,0,0

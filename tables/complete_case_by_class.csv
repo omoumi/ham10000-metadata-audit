@@ -1,0 +1,11 @@
+,all,complete,complete,complete,complete_core,complete_core,complete_core
+,images,images,groups,lesions,images,groups,lesions
+label,,,,,,,
+MEL,1305,1263,696,696,1263,696,696
+NV,7737,7348,5935,5936,7348,5935,5936
+BCC,622,582,370,370,582,370,370
+AK,149,146,96,96,146,96,96
+BKL,1338,1230,808,809,1230,808,809
+DF,160,129,83,83,129,83,83
+VASC,180,157,109,109,157,109,109
+SCC,229,229,165,165,229,165,165

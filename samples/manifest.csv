@@ -1,0 +1,25 @@
+file,image_id,label,license,attribution,caption
+samples/MEL_ISIC_0030795.jpg,ISIC_0030795,MEL,CC-BY-NC,MILK study team,60 y | male | Trunk
+samples/MEL_ISIC_0033226.jpg,ISIC_0033226,MEL,CC-BY-NC,MILK study team,65 y | male | Upper extremity
+samples/MEL_ISIC_0029495.jpg,ISIC_0029495,MEL,CC-BY-NC,MILK study team,70 y | female | Upper extremity
+samples/NV_ISIC_0034741.jpg,ISIC_0034741,NV,CC-BY-NC,MILK study team,40 y | male | Upper extremity
+samples/NV_ISIC_0035961.jpg,ISIC_0035961,NV,CC-BY-NC,MILK study team,20 y | female | Lower extremity
+samples/NV_ISIC_0027062.jpg,ISIC_0027062,NV,CC-BY-NC,MILK study team,70 y | female | Upper extremity
+samples/BCC_ISIC_0028035.jpg,ISIC_0028035,BCC,CC-BY-NC,MILK study team,70 y | male | Upper extremity
+samples/BCC_ISIC_0027425.jpg,ISIC_0027425,BCC,CC-BY-NC,MILK study team,75 y | male | Upper extremity
+samples/BCC_ISIC_0030339.jpg,ISIC_0030339,BCC,CC-BY-NC,MILK study team,75 y | female | Lower extremity
+samples/AK_ISIC_0027615.jpg,ISIC_0027615,AK,CC-BY-NC,MILK study team,70 y | male | Upper extremity
+samples/AK_ISIC_0027896.jpg,ISIC_0027896,AK,CC-BY-NC,MILK study team,75 y | male | Upper extremity
+samples/AK_ISIC_0026575.jpg,ISIC_0026575,AK,CC-BY-NC,MILK study team,80 y | male | Head and neck
+samples/BKL_ISIC_0030583.jpg,ISIC_0030583,BKL,CC-BY-NC,MILK study team,35 y | female | Trunk
+samples/BKL_ISIC_0031633.jpg,ISIC_0031633,BKL,CC-BY-NC,MILK study team,75 y | male | Head and neck
+samples/BKL_ISIC_0026245.jpg,ISIC_0026245,BKL,CC-BY-NC,MILK study team,45 y | female | Lower extremity
+samples/DF_ISIC_0031257.jpg,ISIC_0031257,DF,CC-BY-NC,MILK study team,55 y | female | Upper extremity
+samples/DF_ISIC_0027216.jpg,ISIC_0027216,DF,CC-BY-NC,MILK study team,60 y | female | Lower extremity
+samples/DF_ISIC_0033790.jpg,ISIC_0033790,DF,CC-BY-NC,MILK study team,50 y | male | Lower extremity
+samples/VASC_ISIC_0034214.jpg,ISIC_0034214,VASC,CC-BY-NC,MILK study team,60 y | male | Trunk
+samples/VASC_ISIC_0030104.jpg,ISIC_0030104,VASC,CC-BY-NC,MILK study team,65 y | female | Trunk
+samples/VASC_ISIC_0032545.jpg,ISIC_0032545,VASC,CC-BY-NC,MILK study team,45 y | female | Trunk
+samples/SCC_ISIC_0026100.jpg,ISIC_0026100,SCC,CC-BY-NC,MILK study team,70 y | male | Lower extremity
+samples/SCC_ISIC_0025811.jpg,ISIC_0025811,SCC,CC-BY-NC,MILK study team,55 y | male | Upper extremity
+samples/SCC_ISIC_0033295.jpg,ISIC_0033295,SCC,CC-BY-NC,MILK study team,70 y | male | Upper extremity

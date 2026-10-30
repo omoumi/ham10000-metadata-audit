@@ -1,0 +1,21 @@
+,subset,comparison,variable,kind,smd,smd_corrected,ci_low,ci_high,ci_method,imbalanced,n_subset,n_reference
+0,complete,vs_all,label,categorical,0.025775505155875622,0.02492154409202048,0.017370895701654773,0.03139371522234939,basic bootstrap,False,11084,11720
+1,complete,vs_all,acquisition,categorical,0.0,0.0,0.0,0.0,basic bootstrap,False,11084,11720
+2,complete,vs_all,age_approx,numeric,0.007590992382921915,0.007590992382921915,0.00432629113642213,0.010608542287653467,percentile bootstrap,False,11084,11720
+3,complete,vs_all,sex,categorical,0.0023786837104693317,0.0022714871773212427,0.0,0.004581474705392664,basic bootstrap,False,11084,11720
+4,complete,vs_all,anatom_site_1,categorical,0.0019898924496974824,0.0015281210814377584,0.0,0.0031062683193690457,basic bootstrap,False,11084,11720
+5,complete,vs_rest,label,categorical,0.4217657827734359,0.40809851074637593,0.3354141305164584,0.4846030928111317,basic bootstrap,True,11084,636
+6,complete,vs_rest,acquisition,categorical,0.0,0.0,0.0,0.0,basic bootstrap,False,11084,636
+7,complete,vs_rest,age_approx,numeric,0.3484320338870819,0.3484320338870819,0.2015348515044169,0.499827533684465,percentile bootstrap,True,11084,636
+8,complete,vs_rest,sex,categorical,0.09219049810161566,0.08993276009300674,0.0,0.17747295947089745,basic bootstrap,False,11084,636
+9,complete,vs_rest,anatom_site_1,categorical,0.4005017820283603,0.2964595641545422,0.0,0.5988523071685349,basic bootstrap,True,11084,636
+10,complete_core,vs_all,label,categorical,0.025775505155875622,0.02492154409202048,0.017370895701654773,0.03139371522234939,basic bootstrap,False,11084,11720
+11,complete_core,vs_all,acquisition,categorical,0.0,0.0,0.0,0.0,basic bootstrap,False,11084,11720
+12,complete_core,vs_all,age_approx,numeric,0.007590992382921915,0.007590992382921915,0.00432629113642213,0.010608542287653467,percentile bootstrap,False,11084,11720
+13,complete_core,vs_all,sex,categorical,0.0023786837104693317,0.0022714871773212427,0.0,0.004581474705392664,basic bootstrap,False,11084,11720
+14,complete_core,vs_all,anatom_site_1,categorical,0.0019898924496974824,0.0015281210814377584,0.0,0.0031062683193690457,basic bootstrap,False,11084,11720
+15,complete_core,vs_rest,label,categorical,0.4217657827734359,0.40809851074637593,0.3354141305164584,0.4846030928111317,basic bootstrap,True,11084,636
+16,complete_core,vs_rest,acquisition,categorical,0.0,0.0,0.0,0.0,basic bootstrap,False,11084,636
+17,complete_core,vs_rest,age_approx,numeric,0.3484320338870819,0.3484320338870819,0.2015348515044169,0.499827533684465,percentile bootstrap,True,11084,636
+18,complete_core,vs_rest,sex,categorical,0.09219049810161566,0.08993276009300674,0.0,0.17747295947089745,basic bootstrap,False,11084,636
+19,complete_core,vs_rest,anatom_site_1,categorical,0.4005017820283603,0.2964595641545422,0.0,0.5988523071685349,basic bootstrap,True,11084,636
